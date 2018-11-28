@@ -28,16 +28,10 @@
 <body>
   <div class="reveal">
     <div class="slides">
-      <section data-background-image="public/titleslide-169.png">
+      <section data-background-image="public/front.png">
         <section>
           <!-- HACK =>  Somehow reveal needs empty section for background image to display :/ -->
         </section>
-      </section>
-      <section class="main-title">
-        🔋
-        <p>
-          <code>Supercharge your debugging experience</code>
-        </p>
       </section>
       <section>
         <section>
@@ -52,7 +46,7 @@
             </p>
           </section>
           <br>
-          <section class="bg-black text-white">
+          <section class="bg-black text-white p-10">
             <p class="fragment fade-in">In real world, we spend a higher percentage of time in reading and debugging code.</p>
             <hr>
             <p class="fragment fade-in">Efficient use of devtools can help with debugging and boost productivity</p>
@@ -178,64 +172,64 @@
 
                   let delay = 500;
                   const increaseDelay = () => delay += 500;
-              
+
                   <mark>let form1 = $('#form1');</mark>
-              
+
                   setTimeout(()=>{
                       <mark>form1.firstname.value = 'Ravi';</mark>
                   }, delay)
-              
+
                   increaseDelay()
-              
+
                   setTimeout(()=>{
                       <mark>form1.lastname.value = 'Sharma';</mark>
                   }, delay)
-              
+
                   increaseDelay()
-              
+
                   setTimeout(()=>{
                       <mark>form1.querySelector('button').click()</mark>
-                  }, delay)  
-              
-                  increaseDelay()
-              
-              /////////////////////////////////////////
-              
-                  <mark>let form2 = $('#form2');</mark>
-              
-                  setTimeout(()=>{
-                      <mark>form2.organization.value = 'TW';</mark>    
                   }, delay)
-              
+
                   increaseDelay()
-              
+
+              /////////////////////////////////////////
+
+                  <mark>let form2 = $('#form2');</mark>
+
+                  setTimeout(()=>{
+                      <mark>form2.organization.value = 'TW';</mark>
+                  }, delay)
+
+                  increaseDelay()
+
                   setTimeout(()=>{
                       <mark>form2.querySelector('button').click()</mark>
-                  }, delay)  
-              
+                  }, delay)
+
                   increaseDelay()
-              
-              
+
+
               /////////////////////////////////////
-              
+
                   <mark>let form3 = $('#form3');</mark>
-              
+
                   setTimeout(()=>{
                       <mark>form3.phone.value = 98765;</mark>
                   }, delay)
-              
+
                   increaseDelay()
-              
+
                   setTimeout(()=>{
                       <mark>form3.email.value = 'ping@rvi.fyi';</mark>
-                  }, delay)  
-              
+                  }, delay)
+
                   increaseDelay()
-              
+
                   setTimeout(()=>{
                       <mark>form3.querySelector('button').click()</mark>
-                  }, delay)  
-              
+                  }, delay)
+
                   increaseDelay()
               })()
             </code></pre>
@@ -244,12 +238,12 @@
           <pre><code  data-trim data-noescape>
               (()=> {
                 let form1 = $('#form1');
-                form1.firstname.value = 'Ravi';    
+                form1.firstname.value = 'Ravi';
                 form1.lastname.value = 'Sharma';
                 form1.querySelector('button').click()
 
                 let form2 = $('#form2');
-                form2.organization.value = 'TW';    
+                form2.organization.value = 'TW';
                 form2.querySelector('button').click()
 
                 let form3 = $('#form3');
@@ -366,16 +360,16 @@
           </li>
         </ul>
       </section>
-      <section>
-        <section data-background="#202020">
-          <img src="public/16_9Master Template.svg" alt="">
+      <section data-background-image="public/last.png">
+        <section>
+          <!-- HACK =>  Somehow reveal needs empty section for background image to display :/ -->
         </section>
       </section>
     </div>
   </div>
   <script src="public/reveal/reveal.js"></script>
   <script src="public/reveal/plugin/highlight/highlight.js"></script>
-  <script> 
+  <script>
     Reveal.initialize();
     hljs.initHighlighting();
   </script>
