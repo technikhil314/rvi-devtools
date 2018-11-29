@@ -1,7 +1,7 @@
 // Library code
 function a(b, c, d, e) {
   // no nasa algorithm here..
-  return e;
+  return `${e}`;
 }
 
 function magicalFunction(val) {
