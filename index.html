@@ -96,30 +96,6 @@
           </section>
         </section>
         <section>
-          <section><h1 class="bg-red text-white">Overrides</h1></section>
-          <section>
-            <h2>Persist changes</h2>
-            <section class="fragment">
-              <p><span class="px-10 text-white bg-red">CSS</span></p>
-              <p><span class="px-10 bg-yellow">Javascript</span></p>
-              <p><span class="px-10 text-white bg-blue">Images</span></p>
-            </section>
-            <section class="fragment">
-              <table>
-                <tr>
-                  <td>Try out different look and feel on a website</td>
-                </tr>
-                <tr>
-                  <td>Alter loading scripts</td>
-                </tr>
-                <tr>
-                  <td>Or, even modify existing scripts</td>
-                </tr>
-              </table>
-            </section>
-          </section>
-        </section>
-        <section>
           <section>
             <h1 class="text-white bg-green">Snippets</h1>
             <small>automate the boring stuff.</small>
@@ -178,92 +154,117 @@
           </section>
           <section>
             <pre><code data-trim data-noescape>
-                (()=> {
+                        (()=> {
 
-                  let delay = 500;
-                  const increaseDelay = () => delay += 500;
+                          let delay = 500;
+                          const increaseDelay = () => delay += 500;
 
-                  <mark>let form1 = $('#form1');</mark>
+                          <mark>let form1 = $('#form1');</mark>
 
-                  setTimeout(()=>{
-                      <mark>form1.firstname.value = 'Ravi';</mark>
-                  }, delay)
+                          setTimeout(()=>{
+                              <mark>form1.firstname.value = 'Ravi';</mark>
+                          }, delay)
 
-                  increaseDelay()
+                          increaseDelay()
 
-                  setTimeout(()=>{
-                      <mark>form1.lastname.value = 'Sharma';</mark>
-                  }, delay)
+                          setTimeout(()=>{
+                              <mark>form1.lastname.value = 'Sharma';</mark>
+                          }, delay)
 
-                  increaseDelay()
+                          increaseDelay()
 
-                  setTimeout(()=>{
-                      <mark>form1.querySelector('button').click()</mark>
-                  }, delay)
+                          setTimeout(()=>{
+                              <mark>form1.querySelector('button').click()</mark>
+                          }, delay)
 
-                  increaseDelay()
+                          increaseDelay()
 
-              /////////////////////////////////////////
+                      /////////////////////////////////////////
 
-                  <mark>let form2 = $('#form2');</mark>
+                          <mark>let form2 = $('#form2');</mark>
 
-                  setTimeout(()=>{
-                      <mark>form2.organization.value = 'TW';</mark>
-                  }, delay)
+                          setTimeout(()=>{
+                              <mark>form2.organization.value = 'TW';</mark>
+                          }, delay)
 
-                  increaseDelay()
+                          increaseDelay()
 
-                  setTimeout(()=>{
-                      <mark>form2.querySelector('button').click()</mark>
-                  }, delay)
+                          setTimeout(()=>{
+                              <mark>form2.querySelector('button').click()</mark>
+                          }, delay)
 
-                  increaseDelay()
+                          increaseDelay()
 
 
-              /////////////////////////////////////
+                      /////////////////////////////////////
 
-                  <mark>let form3 = $('#form3');</mark>
+                          <mark>let form3 = $('#form3');</mark>
 
-                  setTimeout(()=>{
-                      <mark>form3.phone.value = 98765;</mark>
-                  }, delay)
+                          setTimeout(()=>{
+                              <mark>form3.phone.value = 98765;</mark>
+                          }, delay)
 
-                  increaseDelay()
+                          increaseDelay()
 
-                  setTimeout(()=>{
-                      <mark>form3.email.value = 'ping@rvi.fyi';</mark>
-                  }, delay)
+                          setTimeout(()=>{
+                              <mark>form3.email.value = 'ping@rvi.fyi';</mark>
+                          }, delay)
 
-                  increaseDelay()
+                          increaseDelay()
 
-                  setTimeout(()=>{
-                      <mark>form3.querySelector('button').click()</mark>
-                  }, delay)
+                          setTimeout(()=>{
+                              <mark>form3.querySelector('button').click()</mark>
+                          }, delay)
 
-                  increaseDelay()
-              })()
-            </code></pre>
+                          increaseDelay()
+                      })()
+                    </code></pre>
           </section>
           <section>
             <pre><code  data-trim data-noescape>
-              (()=> {
-                let form1 = $('#form1');
-                form1.firstname.value = 'Ravi';
-                form1.lastname.value = 'Sharma';
-                form1.querySelector('button').click()
+                      (()=> {
+                        let form1 = $('#form1');
+                        form1.firstname.value = 'Ravi';
+                        form1.lastname.value = 'Sharma';
+                        form1.querySelector('button').click()
 
-                let form2 = $('#form2');
-                form2.organization.value = 'TW';
-                form2.querySelector('button').click()
+                        let form2 = $('#form2');
+                        form2.organization.value = 'TW';
+                        form2.querySelector('button').click()
 
-                let form3 = $('#form3');
-                form3.phone.value = 98765;
-                form3.email.value = 'ping@rvi.fyi';
-                form3.querySelector('button').click();
-            })()
-          </code></pre>
+                        let form3 = $('#form3');
+                        form3.phone.value = 98765;
+                        form3.email.value = 'ping@rvi.fyi';
+                        form3.querySelector('button').click();
+                    })()
+                  </code></pre>
           </section>
         </section>
+        <section>
+          <section><h1 class="bg-red text-white">Overrides</h1></section>
+          <section>
+            <h2>Persist changes</h2>
+            <section class="fragment">
+              <p><span class="px-10 text-white bg-red">CSS</span></p>
+              <p><span class="px-10 bg-yellow">Javascript</span></p>
+              <p><span class="px-10 text-white bg-blue">Images</span></p>
+            </section>
+            <section class="fragment">
+              <table>
+                <tr>
+                  <td>Try out different look and feel on a website</td>
+                </tr>
+                <tr>
+                  <td>Alter loading scripts</td>
+                </tr>
+                <tr>
+                  <td>Or, even modify existing scripts</td>
+                </tr>
+              </table>
+            </section>
+          </section>
+        </section>
+
         <section>
           <h1 class="text-white bg-blue">Request blocking</h1>
           <small>blocking unwanted requests.</small>
@@ -317,17 +318,19 @@
               <span class="bg-yellow px-10 pointer" onclick="consoleTableArray()">arrays</span>
             </small>
           </section>
-          <section>
-            <span class="text-xl text-white bg-black px-10">console.assert</span>
-            <p>
-              <span class="pointer text-white bg-green px-10" onclick="consoleAssertTrue()"
-                >1 == 1</span
-              >
-              <span class="pointer text-white bg-red px-10" onclick="consoleAssertFalse()"
-                >2 == 3</span
-              >
-            </p>
-          </section>
+          <!--
+            <section>
+              <span class="text-xl text-white bg-black px-10">console.assert</span>
+              <p>
+                <span class="pointer text-white bg-green px-10" onclick="consoleAssertTrue()"
+                  >1 == 1</span
+                >
+                <span class="pointer text-white bg-red px-10" onclick="consoleAssertFalse()"
+                  >2 == 3</span
+                >
+              </p>
+            </section>
+          -->
           <section>
             <p>
               <span class="text-xl text-white bg-black px-10 pointer" onclick="consoleStyle()"
@@ -345,22 +348,24 @@
             <p><span class="text-xl text-white bg-black px-10">copy</span></p>
             <small>copy value to clipboard.</small>
           </section>
-          <section>
-            <p><span class="text-xl text-white bg-black px-10">$</span></p>
-            <table>
-              <tr></tr>
-              <tr>
-                <td>$0</td>
-              </tr>
-              <tr>
-                <td>$_</td>
-              </tr>
-              <tr></tr>
-            </table>
+          <!--
+            <section>
+              <p><span class="text-xl text-white bg-black px-10">$</span></p>
+              <table>
+                <tr></tr>
+                <tr>
+                  <td>$0</td>
+                </tr>
+                <tr>
+                  <td>$_</td>
+                </tr>
+                <tr></tr>
+              </table>
 
-            <br />
-            <small>query, current element and last result</small>
-          </section>
+              <br />
+              <small>query, current element and last result</small>
+            </section>
+          -->
         </section>
         <section>
           <p>explore more on devtools</p>
