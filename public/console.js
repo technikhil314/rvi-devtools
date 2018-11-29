@@ -1,53 +1,53 @@
 // CONSOLE SLIDES //
 
 function consoleLog() {
-  console.log("Just logged to console!");
+  console.log('Just logged to console!');
 }
 
 function consoleInfo() {
-  console.info("Just an Info!");
+  console.info('Just an Info!');
 }
 
 function consoleError() {
-  console.error("BOOM! Error Occured!");
+  console.error('BOOM! Error Occured!');
 }
 
 function consoleWarn() {
-  console.warn("Just a warning!");
+  console.warn('Just a warning!');
 }
 
 const listOfSuperheroes = [
   {
-    universe: "DC",
+    universe: 'DC',
     characters: [
       {
-        name: "Batman",
-        power: "Money"
+        name: 'Batman',
+        power: 'Money'
       },
       {
-        name: "Superman",
-        power: "Flying"
+        name: 'Superman',
+        power: 'Flying'
       },
       {
-        name: "Flash",
-        power: "Speed"
+        name: 'Flash',
+        power: 'Speed'
       }
     ]
   },
   {
-    universe: "Marvel",
+    universe: 'Marvel',
     characters: [
       {
-        name: "Thor",
-        power: "Thunder"
+        name: 'Thor',
+        power: 'Thunder'
       },
       {
-        name: "Iron Man",
-        power: "Money"
+        name: 'Iron Man',
+        power: 'Money'
       },
       {
-        name: "Hulk",
-        power: "Superhuman Strength"
+        name: 'Hulk',
+        power: 'Superhuman Strength'
       }
     ]
   }
@@ -92,29 +92,29 @@ function consoleClear() {
 
 function consoleTableObject() {
   console.table({
-    name: "Ravi",
-    role: "UI Dev",
-    motto: "YOLO ™️"
+    name: 'Ravi',
+    role: 'You-Sir Interface',
+    motto: 'YOLO™️'
   });
 }
 
 function consoleTableArray() {
   console.table([
     {
-      name: "Ravi",
-      role: "UI Dev",
-      motto: "YOLO ™️"
+      name: 'Ravi',
+      role: 'YOU-SIR Interface',
+      motto: 'YOLO™️'
     },
     {
-      name: "Dude",
-      role: "Nope",
-      motto: "Coffee ☕"
+      name: 'Dude',
+      role: 'Nope',
+      motto: 'Coffee☕'
     }
   ]);
 }
 
 function consoleAssertTrue() {
-  console.assert(1 == 1, "I have done nothing wrong");
+  console.assert(1 == 1, 'I have done nothing wrong');
 }
 
 function consoleAssertFalse() {
@@ -123,21 +123,21 @@ function consoleAssertFalse() {
 
 function consoleStyle() {
   console.log(
-    "%c STYLED CONSOLE MESSAGES",
-    "color: white; background-color: black; font-size: 20px;"
+    '%c STYLED CONSOLE MESSAGES',
+    'color: white; background-color: black; font-size: 20px;'
   );
 }
 
 function consoleStyleCrazy() {
   const styles = [
-    "color: white",
-    "font-size: 25px",
-    "padding: 15px",
-    "background: rgb(2,0,36)",
-    "background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 31%, rgba(0,212,255,1) 100%)"
-  ].join("; ");
+    'color: white',
+    'font-size: 25px',
+    'padding: 15px',
+    'background: rgb(2,0,36)',
+    'background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 31%, rgba(0,212,255,1) 100%)'
+  ].join('; ');
 
-  console.log("%c Gradients!", styles);
+  console.log('%c Gradients!', styles);
 }
 
 ////////////////////////
